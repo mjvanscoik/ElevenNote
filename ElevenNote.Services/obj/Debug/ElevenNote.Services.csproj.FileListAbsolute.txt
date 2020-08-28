@@ -1,0 +1,12 @@
+C:\Users\vansc\Desktop\Eleven Fifty\Projects\ElevenNote.WebAPI\ElevenNote.Services\bin\Debug\ElevenNote.Services.dll.config
+C:\Users\vansc\Desktop\Eleven Fifty\Projects\ElevenNote.WebAPI\ElevenNote.Services\bin\Debug\ElevenNote.Services.dll
+C:\Users\vansc\Desktop\Eleven Fifty\Projects\ElevenNote.WebAPI\ElevenNote.Services\bin\Debug\ElevenNote.Services.pdb
+C:\Users\vansc\Desktop\Eleven Fifty\Projects\ElevenNote.WebAPI\ElevenNote.Services\bin\Debug\EntityFramework.dll
+C:\Users\vansc\Desktop\Eleven Fifty\Projects\ElevenNote.WebAPI\ElevenNote.Services\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\vansc\Desktop\Eleven Fifty\Projects\ElevenNote.WebAPI\ElevenNote.Services\bin\Debug\EntityFramework.xml
+C:\Users\vansc\Desktop\Eleven Fifty\Projects\ElevenNote.WebAPI\ElevenNote.Services\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\vansc\Desktop\Eleven Fifty\Projects\ElevenNote.WebAPI\ElevenNote.Services\obj\Debug\ElevenNote.Services.csprojAssemblyReference.cache
+C:\Users\vansc\Desktop\Eleven Fifty\Projects\ElevenNote.WebAPI\ElevenNote.Services\obj\Debug\ElevenNote.Services.csproj.CoreCompileInputs.cache
+C:\Users\vansc\Desktop\Eleven Fifty\Projects\ElevenNote.WebAPI\ElevenNote.Services\obj\Debug\ElevenNote.Services.csproj.CopyComplete
+C:\Users\vansc\Desktop\Eleven Fifty\Projects\ElevenNote.WebAPI\ElevenNote.Services\obj\Debug\ElevenNote.Services.dll
+C:\Users\vansc\Desktop\Eleven Fifty\Projects\ElevenNote.WebAPI\ElevenNote.Services\obj\Debug\ElevenNote.Services.pdb
