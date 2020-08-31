@@ -2,7 +2,9 @@
 using ElevenNote.Models;
 using System;
 using System.Collections.Generic;
+using System.Data.Entity.Core.Objects.DataClasses;
 using System.Linq;
+using System.Runtime.InteropServices.ComTypes;
 using System.Runtime.InteropServices.WindowsRuntime;
 using System.Text;
 using System.Threading.Tasks;
@@ -20,20 +22,19 @@ namespace ElevenNote.Services
 
         public bool CreateNote(NoteCreate model)
         {
-            var entity = 
-                new Note()
-                {
-                    OwnerId = _userId,
-                    Content = model.Content,
-                    Title = model.Title,
-                    CreatedUtc = DateTimeOffset.Now
-                };
+            var entity = new Note()
+            {
+                OwnerId = _userId,
+                Content = model.Content,
+                Title = model.Title,
+                CreatedUtc = DateTimeOffset.Now
+            };
 
 
             using (var ctx = new ApplicationDbContext())
             {
                 ctx.Notes.Add(entity);
-                ReturnValueNameAttribute ctx.SaveChanges() == 1;
+                return ctx.SaveChanges() == 1;
             }
         }
 
@@ -55,6 +56,25 @@ namespace ElevenNote.Services
                                     }
                                 );
                 return query.ToArray();
+            }
+        }
+        public NoteDetail GetNoteById()
+        {
+            using (var ctx = new ApplicationDbContext())
+            {
+                var entity =
+                ctx
+                    .Notes
+                    .Single(e => e.NoteId == id && e.OwnerId == _userId);
+                return
+                    new NoteDetail
+                    {
+                        NoteId = entity.NoteId,
+                        Title = entity.Title,
+                        Content = entity.Content,
+                        CreatedUtc = entity.CreatedUtc,
+                        ModifiedUtc = entity.ModifiedUtc
+                    };
             }
         }
     }
